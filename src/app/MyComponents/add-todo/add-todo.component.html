@@ -1,0 +1,20 @@
+<div class="container my-3">
+    
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Add a Todo</h5>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="title" placeholder="Enter your Task" [(ngModel)] = "title">
+            </div>
+            <div class="mb-3">
+                <textarea class="form-control" name="desc" rows="3" placeholder="Describe your Task" [(ngModel)] = "desc"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="deadline">Deadline:</label>
+                <input type="date" id="deadline" name="todoDeadline" class="mx-2" [(ngModel)] = "deadline">
+            </div>
+            <button class="btn btn-primary" id="savebtn" (click) = "addtodo()">Add in List</button>
+        </div>
+    </div>
+
+</div>
